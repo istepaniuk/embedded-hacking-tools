@@ -17,7 +17,6 @@ EJTAG pinout (J2)
 |  9 |   TCK   |
 | 11 |   nsRST |
 | 13 |   NC    |
-|----|---------|
 | 14 |   VCC   |
 
 
