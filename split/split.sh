@@ -31,7 +31,7 @@ while read line; do
     size=$(($end - $offset))
     if [[ size -le 0 ]]; then
         echo "ERROR: Negative or null size for partition: $line"
-        exit
+        exit 1
     fi
     echo "Extracting partition '$name' [$offset:$end] ($size bytes)"
     dd iflag=skip_bytes,count_bytes if="$IMAGE" bs=1M \
